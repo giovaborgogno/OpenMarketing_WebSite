@@ -3,7 +3,7 @@
       //recapthca
 
   # Aquí pon la clave secreta que obtuviste en la página de developers de Google
-  define("CLAVE_SECRETA", "6LcxO3wiAAAAACBcFWLVUYCuVga9dE2AD-W9cSp9");
+  define("CLAVE_SECRETA", "***************************");
 
   # Comprobamos si enviaron el dato
   if (!isset($_POST["g-recaptcha-response"]) || empty($_POST["g-recaptcha-response"])) {
@@ -105,12 +105,12 @@
         $mail = new PHPMailer();
         try {
           $mail->isSMTP();
-          $mail->Host = 'c2480355.ferozo.com';
+          $mail->Host = '**************';
           $mail->Port = 465;
           $mail->SMTPSecure = 'ssl';
           $mail->SMTPAuth = true;
-          $mail->Username = "alejandro@openm.us";
-          $mail->Password = "*sxKGMp2xM";
+          $mail->Username = "*******************";
+          $mail->Password = "*********************";
           $mail->CharSet = "UTF-8";
           $mail->SetFrom($email_from);
           $mail->AddReplyTo($email_from);
